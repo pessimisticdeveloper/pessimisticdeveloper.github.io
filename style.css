@@ -38,7 +38,7 @@ p{
     padding: 0 15px;
 }
 .header{
-    background-image: url(images/bg.jpg) ;
+    background-image: url(bg.jpg) ;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
