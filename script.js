@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: 'Postman', level: 71 },
         { name: 'Firebase', level: 60 },
         { name: 'Canva', level: 50 },
+        { name: 'Zap', level: 40 },
     ];
 
     const projects = [
