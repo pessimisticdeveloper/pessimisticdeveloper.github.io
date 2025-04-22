@@ -2,29 +2,30 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1e1e; 
-    color: #dcdcdc; 
+    background-color: #1e1e1e;
+    color: #dcdcdc;
     line-height: 1.6;
+    font-size: 16px;
 }
 
 .container {
-    max-width: 960px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #282c34; 
+    max-width: 100%; 
+    margin: 20px; 
+    padding: 20px;
+    background-color: #282c34;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 }
 
 h1, h2, h3 {
-    color: #61afef; 
+    color: #61afef;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .section {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 25px; 
+    padding-bottom: 15px;
     border-bottom: 1px solid #3e4451;
 }
 
@@ -39,21 +40,27 @@ h1, h2, h3 {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px; 
 }
 
 .skills-list li {
     background-color: #383e4a;
     color: #abb2bf;
-    padding: 8px 15px;
+    padding: 6px 12px; 
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 0.85rem; 
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }
 
 .project-card {
@@ -65,11 +72,13 @@ h1, h2, h3 {
 
 .project-card h4 {
     margin-top: 0;
-    color: #e06c75; 
+    color: #e06c75;
+    font-size: 1.1rem; 
 }
 
 .project-card p {
     color: #abb2bf;
+    font-size: 0.9rem; 
 }
 
 .project-card a {
@@ -84,29 +93,23 @@ h1, h2, h3 {
 .certificates-list {
     padding: 0;
     list-style: none;
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
 }
 
 .certificates-list li {
-    margin-bottom: 0; 
-    padding-bottom: 0; 
-    border-bottom: none; 
-    border: 1px solid #5c6370; 
-    border-radius: 5px; 
-    padding: 10px 15px; 
-    background-color: #383e4a; 
-    color: #abb2bf; 
-    flex-grow: 1; 
-    min-width: 200px; 
+    margin-bottom: 10px; 
+    padding: 10px 15px;
+    border-bottom: none;
+    border: 1px solid #5c6370;
+    border-radius: 5px;
+    background-color: #383e4a;
+    color: #abb2bf;
+    flex-grow: 1;
+    min-width: auto;
+    font-size: 0.9rem; 
 }
-
-.certificates-list li:last-child {
-    border-bottom: none; 
-}
-
-
 
 a {
     color: #98c379;
@@ -125,35 +128,34 @@ a:hover {
 .emphasize {
     font-style: italic;
 }
-/* ... diğer stiller ... */
 
 .level-bar-container {
     background-color: #495057;
     border-radius: 5px;
-    height: 8px;
+    height: 6px; 
     margin-top: 5px;
-    overflow: hidden; /* Çubuğun sınırların dışına taşmasını engeller */
+    overflow: hidden;
 }
 
 .level-bar {
     background-color: green;
     height: 100%;
     border-radius: 5px;
-    width: 0%; /* Başlangıçta 0 olacak, JS ile ayarlanacak */
+    width: 0%;
     transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    font-size: 0.7rem;
-    line-height: 8px;
+    font-size: 0.6rem;
+    line-height: 6px;
     text-align: center;
-    color: #fff; /* Çubuk üzerindeki yüzde yazısı rengi */
+    color: #fff;
 }
-/* ... diğer stiller ... */
 
 footer {
     background-color: #282c34;
     color: #abb2bf;
-    padding: 20px 30px;
+    padding: 15px 20px; 
     text-align: center;
     border-top: 1px solid #3e4451;
+    font-size: 0.9rem;
 }
 
 .contact-info {
@@ -163,7 +165,7 @@ footer {
 }
 
 .contact-info p {
-    margin-bottom: 10px;
+    margin-bottom: 8px; 
 }
 
 .contact-info ul {
@@ -171,7 +173,10 @@ footer {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 15px; 
 }
 
 .contact-info ul li a {
@@ -181,12 +186,13 @@ footer {
     align-items: center;
     gap: 5px;
     transition: color 0.3s ease-in-out;
+    font-size: 1rem; 
 }
 
 .contact-info ul li a:hover {
-    color: #c678dd; /* Hover rengi */
+    color: #c678dd;
 }
 
 .contact-info ul li a i {
-    font-size: 1.2rem;
+    font-size: 1.1rem; 
 }
